@@ -1,9 +1,3 @@
-module "aws_vpc" {
-  source          = "github.com/erozedguy/AWS-VPC-terraform-module.git"
-  networking      = var.networking2
-  security_groups = var.security_groups2
-}
-
 variable "networking2" {
   type = object({
    cidr_block       = string
